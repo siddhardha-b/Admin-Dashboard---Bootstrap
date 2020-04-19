@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/mdb.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Task</title>
+</head>
+<body>
+
+<!-- Main Navbar -->
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <div class="container">
+        <a href="index.html" class="navbar-brand">
+            <i class="fa fa-battery-half text-danger"></i> Admin Dashboard</a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#adminDashboard">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="adminDashboard">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa fa-chart-bar"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="task.html" class="nav-link">
+                        <i class="fa fa-list"></i> Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="categories.html" class="nav-link">
+                        <i class="fa fa-sitemap"></i> Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="employee.html" class="nav-link">
+                        <i class="fa fa-users"></i> Employees</a>
+                </li>
+            </ul>
+            <!--right side -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link" data-toggle="dropdown">
+                        <i class="fa fa-sign-in-alt"></i> Sid <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fa fa-user p-2"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fa fa-cogs p-2"></i> Settings
+                        </a>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                        <i class="fa fa-sign-out-alt"></i> Logout
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- Dashboard Section -->
+
+<section class="p-3 bg-teal text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>
+                    <i class="fa fa-user"></i> Profile
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Buttons -->
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-2">
+                <a href="index.html" class="btn btn-secondary btn-block">
+                    <i class="fa fa-arrow-alt-circle-left text-uppercase"></i> Dashboard
+                </a>
+            </div>
+            <div class="col-md-3 mt-2"></div>
+            <div class="col-md-3 mt-2">
+                <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#updatePassword">
+                    <i class="fa fa-lock text-uppercase"></i> Update Password
+                </a>
+            </div>
+            <div class="col-md-3 mt-2">
+                <a href="" class="btn btn-danger btn-block">
+                    <i class="fa fa-window-close text-uppercase"></i> Delete Account
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Update Password Modal -->
+
+<div class="modal" id="updatePassword">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h2>Update Password</h2> <i class="fa fa-window-close" data-dismiss="modal"></i>
+            </div>
+            <div class="modal-body bg-light">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Old Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="New Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Confirm Password">
+                    </div>
+                    <a href="" class="btn btn-danger" data-dismiss="modal">Close</a>
+                    <input type="submit" value="Update" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Profile Section -->
+
+<section>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-head">
+                        <h4 class="bg-dark text-white p-3">About Me</h4>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam cumque dolore expedita natus non obcaecati perspiciatis quaerat sit vel.</p>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam cumque dolore expedita natus non obcaecati perspiciatis quaerat sit vel.</p>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam cumque dolore expedita natus non obcaecati perspiciatis quaerat sit vel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="../img/profile.jpg" alt="" class="img-fluid p-img">
+                <a href="" class="btn btn-primary btn-block mt-3">
+                    <i class="fa fa-pen-fancy text-uppercase"></i> Edit Image
+                </a>
+                <a href="" class="btn btn-danger btn-block mt-3">
+                    <i class="fa fa-trash text-uppercase"></i> Delete Image
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Main Footer -->
+
+<footer class="bg-dark text-white text-center p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Copyright &#169; 2020</h2>
+                <h6>All rights reserved</h6>
+                <h6>Developed and Maintained by
+                    <a href="https://github.com/siddhardha-b" class="text-warning"> Sid</a></h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- BODY ENDS -->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/mdb.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>
